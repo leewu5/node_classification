@@ -9,7 +9,6 @@ def sampling(src_nodes, sample_num, neighbor_table):
         results.append(res)
     return np.asarray(results).flatten()
 
-
 def multihop_sampling(src_nodes, sample_nums, neighbor_table):
 
     sampling_result = [src_nodes]

@@ -52,7 +52,6 @@ def train():
             print("Epoch {:03d} Batch {:03d} Loss: {:.4f}".format(e, batch, loss.item()))
         test()
 
-
 def test():
     model.eval()
     with torch.no_grad():
@@ -65,4 +64,3 @@ def test():
         print("Test Accuracy: ", accuarcy)
 
 train()
-qifei
