@@ -1,12 +1,10 @@
 import torch
-
 import numpy as np
 import torch.nn as nn
 import torch.optim as optim
 from network import GraphSage
 from data import CoraData
 from sampling import multihop_sampling
-
 from collections import namedtuple
 
 Data = namedtuple('Data', ['x', 'y', 'adjacency_dict',

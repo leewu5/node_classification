@@ -47,9 +47,9 @@ class CoraData(object):
         y[test_index] = y[sorted_test_index]
         num_nodes = x.shape[0]
 
-        train_mask = np.zeros(num_nodes, dtype=np.bool)
-        val_mask = np.zeros(num_nodes, dtype=np.bool)
-        test_mask = np.zeros(num_nodes, dtype=np.bool)
+        train_mask = np.zeros(num_nodes, dtype=np.bool_)
+        val_mask = np.zeros(num_nodes, dtype=np.bool_)
+        test_mask = np.zeros(num_nodes, dtype=np.bool_)
         train_mask[train_index] = True
         val_mask[val_index] = True
         test_mask[test_index] = True
